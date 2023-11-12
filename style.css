@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: black;
+}
+
+.menu-pilihan {
+    width: 380px;
+    margin: 150px auto;
+}
+
+.menu-pilihan .tombol-menu {
+    display: flex;
+    height: 55px;
+    color: white;
+    background: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.tombol-menu i {
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+.menu-pilihan.active .tombol-menu i {
+    transform: rotate(-180deg);
+}
+
+.menu-pilihan .sosmeds {
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, .15);
+    display: none;
+}
+
+.menu-pilihan.active .sosmeds {
+    display: block;
+}
+
+.sosmeds .sosmed {
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 80px;
+    align-items: center;
+    background: transparent;
+}
+
+.sosmeds .sosmed:hover {
+    background: rgba(194, 194, 194, 0.329);
+}
+
+.sosmed i {
+    margin-right: 12px;
+    font-size: 28px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.sosmed .sosmed-teks {
+    font-size: 18px;
+    color: #fff;
+}
